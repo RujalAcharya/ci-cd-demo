@@ -9,4 +9,4 @@ class Numbers(BaseModel):
 
 @app.post("/add")
 def add(numbers: Numbers):
-    return {"result": numbers.a + numbers.b}
+    return {"result": numbers.a * numbers.b}
